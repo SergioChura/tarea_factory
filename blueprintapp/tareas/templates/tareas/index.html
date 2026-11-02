@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>
+    listado de tareas
+</h1>
+<a href="{{url_for('bp_tarea.create')}}">Nuevo tarea</a>
+<ul>
+    {% for item in tareas %}
+    <li>descripcion:{{item.descripcion}} completado: {{item.completado}}</li>
+    {% else %}
+    <li> no hay tareas</li>
+    {% endfor %}
+
+</ul>
+{% endblock %}

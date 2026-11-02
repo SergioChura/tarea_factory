@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>home Page</h1>
+<ul>
+
+    <li><a href="{{ url_for ('bp_miembro.index') }}">Miembros</a></li>
+    <li><a href="{{ url_for ('bp_tarea.index') }}">Tareas</a></li>
+
+</ul>
+
+{% endblock %}
